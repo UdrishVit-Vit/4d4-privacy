@@ -98,13 +98,20 @@
           <li>Приложение <strong>не запрашивает</strong> доступ к камере, микрофону, геолокации, контактам, файлам и другим данным устройства.</li>
           <li>Результаты бросков, история бросков и заметки хранятся только на устройстве и никуда не отправляются.</li>
           <li>Кнопка «Поделиться» открывает системное меню Android: текст результата получает только то приложение, которое вы сами в нём выберете. Само приложение ничего не отправляет.</li>
+          <li>Резервную копию приложение делает только по вашей команде: файл сохраняется туда, куда вы укажете в системном окне «Сохранить», или уходит через меню «Поделиться» туда, куда вы его отправите. Восстановить копию можно только из файла, который вы выберете.</li>
         </ul>
         <p>
           Приложение сохраняет на самом устройстве только то, что нужно для его работы: язык
           интерфейса, последний открытый раздел и выбранный народ, дату календаря и отметку начала
-          кампании, имена годов, заметки к дням, историю последних бросков, а в разделе «Стол» —
-          набор кубиков, участников боя и счётчики. Всё это хранится
-          локально, не покидает устройство и удаляется вместе с приложением или при очистке его данных.
+          кампании, имена годов, заметки к дням, историю последних бросков, блокнот NPC, выбранную
+          редакцию правил и настройку «Не гасить экран», а в разделе «Стол» — набор кубиков,
+          сохранённые броски, участников боя и счётчики. Приложение никуда это не отправляет; всё
+          удаляется вместе с приложением или при очистке его данных.
+        </p>
+        <p>
+          Если на телефоне включено резервное копирование Android, эти данные, как и данные других
+          приложений, могут попасть в вашу личную резервную копию в аккаунте Google и вернуться при
+          переносе на новый телефон. Разработчик доступа к этой копии не имеет.
         </p>
         <p>
           В манифесте приложения объявлено разрешение <code>android.permission.INTERNET</code>.
@@ -125,13 +132,20 @@
           <li>The app <strong>does not request</strong> access to the camera, microphone, location, contacts, files or other device data.</li>
           <li>Roll results, roll history and notes are kept only on the device and are never sent anywhere.</li>
           <li>The Share button opens the Android share menu: the result text goes only to the app you choose there yourself. The app itself sends nothing.</li>
+          <li>The app makes a backup only when you ask: the file is saved where you choose in the system Save window, or goes through the share menu to wherever you send it. A backup can be restored only from a file you pick yourself.</li>
         </ul>
         <p>
           The app stores on the device itself only what it needs to work: the interface language,
           the last opened section and chosen people, the calendar date and campaign start, year
-          names, notes for days, the history of recent rolls and, in the Table section, the dice set,
-          the combatants and the counters. All of it is kept locally, never
-          leaves the device and is removed together with the app or when its data is cleared.
+          names, notes for days, the history of recent rolls, the NPC notebook, the chosen rules
+          edition and the “keep the screen on” setting, and, in the Table section, the dice set,
+          saved rolls, the combatants and the counters. The app sends none of it anywhere; all of it is removed
+          together with the app or when its data is cleared.
+        </p>
+        <p>
+          If Android backup is turned on, this data, like that of other apps, may be included in your
+          personal backup in your Google account and restored when you move to a new phone. The
+          developer has no access to that backup.
         </p>
         <p>
           The app manifest declares the <code>android.permission.INTERNET</code> permission. It is
@@ -152,14 +166,21 @@
           <li>La aplicación <strong>no solicita</strong> acceso a la cámara, el micrófono, la ubicación, los contactos, los archivos ni otros datos del dispositivo.</li>
           <li>Los resultados de las tiradas, el historial de tiradas y las notas se guardan solo en el dispositivo y no se envían a ninguna parte.</li>
           <li>El botón Compartir abre el menú de Android para compartir: el texto del resultado solo llega a la aplicación que tú mismo elijas en él. La propia aplicación no envía nada.</li>
+          <li>La aplicación solo hace una copia de seguridad cuando tú se lo pides: el archivo se guarda donde elijas en la ventana Guardar del sistema, o sale por el menú Compartir hacia donde tú lo envíes. Una copia solo puede restaurarse desde un archivo que tú elijas.</li>
         </ul>
         <p>
           La aplicación guarda en el propio dispositivo solo lo que necesita para funcionar: el
           idioma de la interfaz, la última sección abierta y el pueblo elegido, la fecha del
           calendario y el inicio de la campaña, los nombres de los años, las notas de los días, el
-          historial de las últimas tiradas y, en la sección Mesa, el conjunto de dados, los
-          participantes del combate y los contadores. Todo ello se guarda localmente, nunca sale del
-          dispositivo y se elimina junto con la aplicación o al borrar sus datos.
+          historial de las últimas tiradas, el cuaderno de PNJ, la edición de reglas elegida y el
+          ajuste «mantener la pantalla encendida», y, en la sección Mesa, el conjunto de dados, las
+          tiradas guardadas, los participantes del combate y los contadores. La aplicación no envía nada de ello a ninguna
+          parte; todo se elimina junto con la aplicación o al borrar sus datos.
+        </p>
+        <p>
+          Si la copia de seguridad de Android está activada, estos datos, como los de otras
+          aplicaciones, pueden incluirse en tu copia personal en tu cuenta de Google y restaurarse al
+          pasar a un teléfono nuevo. El desarrollador no tiene acceso a esa copia.
         </p>
         <p>
           El manifiesto de la aplicación declara el permiso <code>android.permission.INTERNET</code>.
